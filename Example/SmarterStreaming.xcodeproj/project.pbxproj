@@ -1,0 +1,1295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312847684846DFD6D1D05D27 /* Pods_SmarterStreaming_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B222880C470285E2C9BCAEAD /* Pods_SmarterStreaming_Example.framework */; };
+		4C931F5A8E574DD484DBB209 /* Pods_SmartiOSPublisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E26CB0E8FF905A63938FF59 /* Pods_SmartiOSPublisher.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* JWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* JWAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* JWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JWViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		930BA6D529D06E7411C61FC9 /* Pods_SmartiOSRelayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB55473142D6F7ECC0B87B3 /* Pods_SmartiOSRelayDemo.framework */; };
+		A1AF29E7D5A2C4BF36BF9349 /* Pods_SmartiOSPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02006E4F89C7081798DF4FD6 /* Pods_SmartiOSPlayer.framework */; };
+		A514758122BA194200375A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A514758022BA194200375A63 /* AppDelegate.m */; };
+		A514758422BA194200375A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A514758322BA194200375A63 /* ViewController.m */; };
+		A514758722BA194200375A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A514758522BA194200375A63 /* Main.storyboard */; };
+		A514758922BA194400375A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A514758822BA194400375A63 /* Assets.xcassets */; };
+		A514758C22BA194400375A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A514758A22BA194400375A63 /* LaunchScreen.storyboard */; };
+		A514758F22BA194400375A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A514758E22BA194400375A63 /* main.m */; };
+		A51475AB22BA3F5B00375A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475AA22BA3F5B00375A63 /* AppDelegate.m */; };
+		A51475AE22BA3F5B00375A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475AD22BA3F5B00375A63 /* ViewController.m */; };
+		A51475B322BA3F5B00375A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51475B222BA3F5B00375A63 /* Assets.xcassets */; };
+		A51475B622BA3F5B00375A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51475B422BA3F5B00375A63 /* LaunchScreen.storyboard */; };
+		A51475B922BA3F5B00375A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475B822BA3F5B00375A63 /* main.m */; };
+		A51475C822BA40D300375A63 /* btn_unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475BE22BA40D300375A63 /* btn_unselected@3x.png */; };
+		A51475C922BA40D300375A63 /* playSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475BF22BA40D300375A63 /* playSmall.png */; };
+		A51475CA22BA40D300375A63 /* btn_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C022BA40D300375A63 /* btn_unselected@2x.png */; };
+		A51475CB22BA40D300375A63 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C122BA40D300375A63 /* shareIcon@2x.png */; };
+		A51475CC22BA40D300375A63 /* fullScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C222BA40D300375A63 /* fullScreen@2x.png */; };
+		A51475CD22BA40D300375A63 /* back_color.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C322BA40D300375A63 /* back_color.png */; };
+		A51475CE22BA40D300375A63 /* backIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C422BA40D300375A63 /* backIcon@2x.png */; };
+		A51475CF22BA40D300375A63 /* btn_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C522BA40D300375A63 /* btn_selected@3x.png */; };
+		A51475D022BA40D300375A63 /* stopSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C622BA40D300375A63 /* stopSmall.png */; };
+		A51475D122BA40D300375A63 /* btn_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A51475C722BA40D300375A63 /* btn_selected@2x.png */; };
+		A51475DF22BA411800375A63 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475DD22BA411800375A63 /* SettingView.m */; };
+		A51475F022BA45FD00375A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475EF22BA45FD00375A63 /* AppDelegate.m */; };
+		A51475F322BA45FD00375A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475F222BA45FD00375A63 /* ViewController.m */; };
+		A51475F622BA45FD00375A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51475F422BA45FD00375A63 /* Main.storyboard */; };
+		A51475F822BA45FE00375A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51475F722BA45FE00375A63 /* Assets.xcassets */; };
+		A51475FB22BA45FE00375A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51475F922BA45FE00375A63 /* LaunchScreen.storyboard */; };
+		A51475FE22BA45FE00375A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A51475FD22BA45FE00375A63 /* main.m */; };
+		A514761622BB176400375A63 /* ConvertTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761422BB176400375A63 /* ConvertTime.m */; };
+		A514761722BB176400375A63 /* ConvertTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761422BB176400375A63 /* ConvertTime.m */; };
+		A514761822BB176400375A63 /* ConvertTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761422BB176400375A63 /* ConvertTime.m */; };
+		A514761F22BB1AD300375A63 /* PlayVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761C22BB1AD300375A63 /* PlayVideoView.m */; };
+		A514762022BB1AD300375A63 /* PlayVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761C22BB1AD300375A63 /* PlayVideoView.m */; };
+		A514762122BB1AD300375A63 /* PlayVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761C22BB1AD300375A63 /* PlayVideoView.m */; };
+		A514762222BB1AD300375A63 /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761D22BB1AD300375A63 /* RecorderView.m */; };
+		A514762322BB1AD300375A63 /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761D22BB1AD300375A63 /* RecorderView.m */; };
+		A514762422BB1AD300375A63 /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761D22BB1AD300375A63 /* RecorderView.m */; };
+		A514762D22BB370700375A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A514762C22BB370700375A63 /* AppDelegate.m */; };
+		A514763022BB370700375A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A514762F22BB370700375A63 /* ViewController.m */; };
+		A514763322BB370700375A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A514763122BB370700375A63 /* Main.storyboard */; };
+		A514763522BB370A00375A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A514763422BB370A00375A63 /* Assets.xcassets */; };
+		A514763822BB370A00375A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A514763622BB370A00375A63 /* LaunchScreen.storyboard */; };
+		A514763B22BB370A00375A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A514763A22BB370A00375A63 /* main.m */; };
+		A5B7064022C32CC600E5A48C /* ConvertTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761422BB176400375A63 /* ConvertTime.m */; };
+		A5B7064122C32CD500E5A48C /* PlayVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761C22BB1AD300375A63 /* PlayVideoView.m */; };
+		A5B7064222C32CD900E5A48C /* RecorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A514761D22BB1AD300375A63 /* RecorderView.m */; };
+		DB60CECF5731D8845E4031A0 /* Pods_SmartiOSEchoCancellation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85AB86733EBAFA4DECB78F1 /* Pods_SmartiOSEchoCancellation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02006E4F89C7081798DF4FD6 /* Pods_SmartiOSPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartiOSPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03793AE006F6AE60F682361F /* Pods-SmartiOSPublisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPublisher.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSPublisher/Pods-SmartiOSPublisher.debug.xcconfig"; sourceTree = "<group>"; };
+		058A59A31CAEBFBF1B8BFB8E /* Pods-SmartiOSPublisherV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPublisherV2.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSPublisherV2/Pods-SmartiOSPublisherV2.release.xcconfig"; sourceTree = "<group>"; };
+		1887812020C91FF567456B8B /* Pods-SmartiOSEchoCancellation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSEchoCancellation.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSEchoCancellation/Pods-SmartiOSEchoCancellation.debug.xcconfig"; sourceTree = "<group>"; };
+		1B8CDDB436DF35437CF1B8D9 /* SmarterStreaming.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SmarterStreaming.podspec; path = ../SmarterStreaming.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D17DD9D5DD61E2F408D1DF3 /* Pods-SmartiOSRelayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSRelayDemo.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSRelayDemo/Pods-SmartiOSRelayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2E26CB0E8FF905A63938FF59 /* Pods_SmartiOSPublisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartiOSPublisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AE9D4996B4259D430455AA /* Pods-SmartiOSPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPlayer.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSPlayer/Pods-SmartiOSPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		3DD431C84F762451F549F71B /* Pods-SmartiOSPlayerV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPlayerV2.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSPlayerV2/Pods-SmartiOSPlayerV2.release.xcconfig"; sourceTree = "<group>"; };
+		49179AB40ACB39E2657ED98A /* Pods-SmartiOSPlayerV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPlayerV2.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSPlayerV2/Pods-SmartiOSPlayerV2.debug.xcconfig"; sourceTree = "<group>"; };
+		4E41AA90245ED6A4E12D64CC /* Pods-SmarterStreaming_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmarterStreaming_Example.debug.xcconfig"; path = "Target Support Files/Pods-SmarterStreaming_Example/Pods-SmarterStreaming_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* SmarterStreaming_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmarterStreaming_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* SmarterStreaming-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmarterStreaming-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* SmarterStreaming-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmarterStreaming-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* JWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* JWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* JWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* JWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		855EE519D48078620B9A6864 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8BB55473142D6F7ECC0B87B3 /* Pods_SmartiOSRelayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartiOSRelayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9482F27D48483A11022806F8 /* Pods-SmartiOSPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPlayer.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSPlayer/Pods-SmartiOSPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		A45949088CDD38215EA847C7 /* Pods-SmartiOSPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPublisher.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSPublisher/Pods-SmartiOSPublisher.release.xcconfig"; sourceTree = "<group>"; };
+		A514757D22BA194200375A63 /* SmartiOSPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartiOSPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514757F22BA194200375A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A514758022BA194200375A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A514758222BA194200375A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A514758322BA194200375A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A514758622BA194200375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A514758822BA194400375A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A514758B22BA194400375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A514758D22BA194400375A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A514758E22BA194400375A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A51475A722BA3F5A00375A63 /* SmartiOSPublisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartiOSPublisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51475A922BA3F5B00375A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A51475AA22BA3F5B00375A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A51475AC22BA3F5B00375A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A51475AD22BA3F5B00375A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A51475B222BA3F5B00375A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51475B522BA3F5B00375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A51475B722BA3F5B00375A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51475B822BA3F5B00375A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A51475BE22BA40D300375A63 /* btn_unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_unselected@3x.png"; sourceTree = "<group>"; };
+		A51475BF22BA40D300375A63 /* playSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playSmall.png; sourceTree = "<group>"; };
+		A51475C022BA40D300375A63 /* btn_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_unselected@2x.png"; sourceTree = "<group>"; };
+		A51475C122BA40D300375A63 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
+		A51475C222BA40D300375A63 /* fullScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullScreen@2x.png"; sourceTree = "<group>"; };
+		A51475C322BA40D300375A63 /* back_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_color.png; sourceTree = "<group>"; };
+		A51475C422BA40D300375A63 /* backIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backIcon@2x.png"; sourceTree = "<group>"; };
+		A51475C522BA40D300375A63 /* btn_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_selected@3x.png"; sourceTree = "<group>"; };
+		A51475C622BA40D300375A63 /* stopSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopSmall.png; sourceTree = "<group>"; };
+		A51475C722BA40D300375A63 /* btn_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_selected@2x.png"; sourceTree = "<group>"; };
+		A51475DD22BA411800375A63 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		A51475DE22BA411800375A63 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		A51475EC22BA45FD00375A63 /* SmartiOSRelayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartiOSRelayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51475EE22BA45FD00375A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A51475EF22BA45FD00375A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A51475F122BA45FD00375A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A51475F222BA45FD00375A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A51475F522BA45FD00375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51475F722BA45FE00375A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A51475FA22BA45FE00375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A51475FC22BA45FE00375A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51475FD22BA45FE00375A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A514761322BB176400375A63 /* ConvertTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTime.h; sourceTree = "<group>"; };
+		A514761422BB176400375A63 /* ConvertTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTime.m; sourceTree = "<group>"; };
+		A514761B22BB1AD300375A63 /* RecorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderView.h; sourceTree = "<group>"; };
+		A514761C22BB1AD300375A63 /* PlayVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoView.m; sourceTree = "<group>"; };
+		A514761D22BB1AD300375A63 /* RecorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderView.m; sourceTree = "<group>"; };
+		A514761E22BB1AD300375A63 /* PlayVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoView.h; sourceTree = "<group>"; };
+		A514762922BB370700375A63 /* SmartiOSEchoCancellation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartiOSEchoCancellation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514762B22BB370700375A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A514762C22BB370700375A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A514762E22BB370700375A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A514762F22BB370700375A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A514763222BB370700375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A514763422BB370A00375A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A514763722BB370A00375A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A514763922BB370A00375A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A514763A22BB370A00375A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B222880C470285E2C9BCAEAD /* Pods_SmarterStreaming_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmarterStreaming_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C110A2C60E95ED388B0CD5AB /* Pods-SmartiOSRelayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSRelayDemo.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSRelayDemo/Pods-SmartiOSRelayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A2171561506B5D22845EC3 /* Pods-SmarterStreaming_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmarterStreaming_Example.release.xcconfig"; path = "Target Support Files/Pods-SmarterStreaming_Example/Pods-SmarterStreaming_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CFE3B23AFF3FE0D6B5607AC3 /* Pods-SmartiOSPublisherV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSPublisherV2.debug.xcconfig"; path = "Target Support Files/Pods-SmartiOSPublisherV2/Pods-SmartiOSPublisherV2.debug.xcconfig"; sourceTree = "<group>"; };
+		D85AB86733EBAFA4DECB78F1 /* Pods_SmartiOSEchoCancellation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartiOSEchoCancellation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCA2CF3F99926D86F64F568 /* Pods-SmartiOSEchoCancellation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartiOSEchoCancellation.release.xcconfig"; path = "Target Support Files/Pods-SmartiOSEchoCancellation/Pods-SmartiOSEchoCancellation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				312847684846DFD6D1D05D27 /* Pods_SmarterStreaming_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514757A22BA194200375A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AF29E7D5A2C4BF36BF9349 /* Pods_SmartiOSPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475A422BA3F5A00375A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C931F5A8E574DD484DBB209 /* Pods_SmartiOSPublisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475E922BA45FD00375A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930BA6D529D06E7411C61FC9 /* Pods_SmartiOSRelayDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514762622BB370700375A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB60CECF5731D8845E4031A0 /* Pods_SmartiOSEchoCancellation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for SmarterStreaming */,
+				A514761122BB16B500375A63 /* Common */,
+				A514757E22BA194200375A63 /* SmartiOSPlayer */,
+				A51475A822BA3F5A00375A63 /* SmartiOSPublisher */,
+				A51475ED22BA45FD00375A63 /* SmartiOSRelayDemo */,
+				A514762A22BB370700375A63 /* SmartiOSEchoCancellation */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				E0813508C0FFBFA72326ADB6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* SmarterStreaming_Example.app */,
+				A514757D22BA194200375A63 /* SmartiOSPlayer.app */,
+				A51475A722BA3F5A00375A63 /* SmartiOSPublisher.app */,
+				A51475EC22BA45FD00375A63 /* SmartiOSRelayDemo.app */,
+				A514762922BB370700375A63 /* SmartiOSEchoCancellation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				B222880C470285E2C9BCAEAD /* Pods_SmarterStreaming_Example.framework */,
+				D85AB86733EBAFA4DECB78F1 /* Pods_SmartiOSEchoCancellation.framework */,
+				02006E4F89C7081798DF4FD6 /* Pods_SmartiOSPlayer.framework */,
+				2E26CB0E8FF905A63938FF59 /* Pods_SmartiOSPublisher.framework */,
+				8BB55473142D6F7ECC0B87B3 /* Pods_SmartiOSRelayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for SmarterStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* JWAppDelegate.h */,
+				6003F59D195388D20070C39A /* JWAppDelegate.m */,
+				6003F5A5195388D20070C39A /* JWViewController.h */,
+				6003F5A6195388D20070C39A /* JWViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for SmarterStreaming";
+			path = SmarterStreaming;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* SmarterStreaming-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* SmarterStreaming-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CDDB436DF35437CF1B8D9 /* SmarterStreaming.podspec */,
+				855EE519D48078620B9A6864 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A514757E22BA194200375A63 /* SmartiOSPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A514757F22BA194200375A63 /* AppDelegate.h */,
+				A514758022BA194200375A63 /* AppDelegate.m */,
+				A514758222BA194200375A63 /* ViewController.h */,
+				A514758322BA194200375A63 /* ViewController.m */,
+				A514758522BA194200375A63 /* Main.storyboard */,
+				A514758822BA194400375A63 /* Assets.xcassets */,
+				A514758A22BA194400375A63 /* LaunchScreen.storyboard */,
+				A514758D22BA194400375A63 /* Info.plist */,
+				A514758E22BA194400375A63 /* main.m */,
+			);
+			path = SmartiOSPlayer;
+			sourceTree = "<group>";
+		};
+		A51475A822BA3F5A00375A63 /* SmartiOSPublisher */ = {
+			isa = PBXGroup;
+			children = (
+				A51475A922BA3F5B00375A63 /* AppDelegate.h */,
+				A51475AA22BA3F5B00375A63 /* AppDelegate.m */,
+				A51475DE22BA411800375A63 /* SettingView.h */,
+				A51475DD22BA411800375A63 /* SettingView.m */,
+				A51475AC22BA3F5B00375A63 /* ViewController.h */,
+				A51475AD22BA3F5B00375A63 /* ViewController.m */,
+				A51475B222BA3F5B00375A63 /* Assets.xcassets */,
+				A51475B422BA3F5B00375A63 /* LaunchScreen.storyboard */,
+				A51475BD22BA40D300375A63 /* images */,
+				A51475B722BA3F5B00375A63 /* Info.plist */,
+				A51475B822BA3F5B00375A63 /* main.m */,
+			);
+			path = SmartiOSPublisher;
+			sourceTree = "<group>";
+		};
+		A51475BD22BA40D300375A63 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A51475BE22BA40D300375A63 /* btn_unselected@3x.png */,
+				A51475BF22BA40D300375A63 /* playSmall.png */,
+				A51475C022BA40D300375A63 /* btn_unselected@2x.png */,
+				A51475C122BA40D300375A63 /* shareIcon@2x.png */,
+				A51475C222BA40D300375A63 /* fullScreen@2x.png */,
+				A51475C322BA40D300375A63 /* back_color.png */,
+				A51475C422BA40D300375A63 /* backIcon@2x.png */,
+				A51475C522BA40D300375A63 /* btn_selected@3x.png */,
+				A51475C622BA40D300375A63 /* stopSmall.png */,
+				A51475C722BA40D300375A63 /* btn_selected@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A51475ED22BA45FD00375A63 /* SmartiOSRelayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A51475EE22BA45FD00375A63 /* AppDelegate.h */,
+				A51475EF22BA45FD00375A63 /* AppDelegate.m */,
+				A51475F122BA45FD00375A63 /* ViewController.h */,
+				A51475F222BA45FD00375A63 /* ViewController.m */,
+				A51475F422BA45FD00375A63 /* Main.storyboard */,
+				A51475F722BA45FE00375A63 /* Assets.xcassets */,
+				A51475F922BA45FE00375A63 /* LaunchScreen.storyboard */,
+				A51475FC22BA45FE00375A63 /* Info.plist */,
+				A51475FD22BA45FE00375A63 /* main.m */,
+			);
+			path = SmartiOSRelayDemo;
+			sourceTree = "<group>";
+		};
+		A514761122BB16B500375A63 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A514761222BB176400375A63 /* utility */,
+				A514761922BB1AD300375A63 /* recorder */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A514761222BB176400375A63 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				A514761322BB176400375A63 /* ConvertTime.h */,
+				A514761422BB176400375A63 /* ConvertTime.m */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		A514761922BB1AD300375A63 /* recorder */ = {
+			isa = PBXGroup;
+			children = (
+				A514761A22BB1AD300375A63 /* localplayer */,
+			);
+			path = recorder;
+			sourceTree = "<group>";
+		};
+		A514761A22BB1AD300375A63 /* localplayer */ = {
+			isa = PBXGroup;
+			children = (
+				A514761E22BB1AD300375A63 /* PlayVideoView.h */,
+				A514761C22BB1AD300375A63 /* PlayVideoView.m */,
+				A514761B22BB1AD300375A63 /* RecorderView.h */,
+				A514761D22BB1AD300375A63 /* RecorderView.m */,
+			);
+			path = localplayer;
+			sourceTree = "<group>";
+		};
+		A514762A22BB370700375A63 /* SmartiOSEchoCancellation */ = {
+			isa = PBXGroup;
+			children = (
+				A514762B22BB370700375A63 /* AppDelegate.h */,
+				A514762C22BB370700375A63 /* AppDelegate.m */,
+				A514762E22BB370700375A63 /* ViewController.h */,
+				A514762F22BB370700375A63 /* ViewController.m */,
+				A514763122BB370700375A63 /* Main.storyboard */,
+				A514763422BB370A00375A63 /* Assets.xcassets */,
+				A514763622BB370A00375A63 /* LaunchScreen.storyboard */,
+				A514763922BB370A00375A63 /* Info.plist */,
+				A514763A22BB370A00375A63 /* main.m */,
+			);
+			path = SmartiOSEchoCancellation;
+			sourceTree = "<group>";
+		};
+		E0813508C0FFBFA72326ADB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E41AA90245ED6A4E12D64CC /* Pods-SmarterStreaming_Example.debug.xcconfig */,
+				C5A2171561506B5D22845EC3 /* Pods-SmarterStreaming_Example.release.xcconfig */,
+				49179AB40ACB39E2657ED98A /* Pods-SmartiOSPlayerV2.debug.xcconfig */,
+				3DD431C84F762451F549F71B /* Pods-SmartiOSPlayerV2.release.xcconfig */,
+				CFE3B23AFF3FE0D6B5607AC3 /* Pods-SmartiOSPublisherV2.debug.xcconfig */,
+				058A59A31CAEBFBF1B8BFB8E /* Pods-SmartiOSPublisherV2.release.xcconfig */,
+				1887812020C91FF567456B8B /* Pods-SmartiOSEchoCancellation.debug.xcconfig */,
+				DFCA2CF3F99926D86F64F568 /* Pods-SmartiOSEchoCancellation.release.xcconfig */,
+				9482F27D48483A11022806F8 /* Pods-SmartiOSPlayer.debug.xcconfig */,
+				31AE9D4996B4259D430455AA /* Pods-SmartiOSPlayer.release.xcconfig */,
+				03793AE006F6AE60F682361F /* Pods-SmartiOSPublisher.debug.xcconfig */,
+				A45949088CDD38215EA847C7 /* Pods-SmartiOSPublisher.release.xcconfig */,
+				C110A2C60E95ED388B0CD5AB /* Pods-SmartiOSRelayDemo.debug.xcconfig */,
+				2D17DD9D5DD61E2F408D1DF3 /* Pods-SmartiOSRelayDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* SmarterStreaming_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SmarterStreaming_Example" */;
+			buildPhases = (
+				FECC3DF1FFB3C9059CB1AB54 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmarterStreaming_Example;
+			productName = SmarterStreaming;
+			productReference = 6003F58A195388D20070C39A /* SmarterStreaming_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A514757C22BA194200375A63 /* SmartiOSPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A514759222BA194400375A63 /* Build configuration list for PBXNativeTarget "SmartiOSPlayer" */;
+			buildPhases = (
+				7455F6E995E3869E425F0B63 /* [CP] Check Pods Manifest.lock */,
+				A514757922BA194200375A63 /* Sources */,
+				A514757A22BA194200375A63 /* Frameworks */,
+				A514757B22BA194200375A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartiOSPlayer;
+			productName = SmartiOSPlayerV2;
+			productReference = A514757D22BA194200375A63 /* SmartiOSPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51475A622BA3F5A00375A63 /* SmartiOSPublisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51475BA22BA3F5B00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSPublisher" */;
+			buildPhases = (
+				823760D3D0F08C7F2DDB4189 /* [CP] Check Pods Manifest.lock */,
+				A51475A322BA3F5A00375A63 /* Sources */,
+				A51475A422BA3F5A00375A63 /* Frameworks */,
+				A51475A522BA3F5A00375A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartiOSPublisher;
+			productName = SmartiOSPublisherV2;
+			productReference = A51475A722BA3F5A00375A63 /* SmartiOSPublisher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51475EB22BA45FD00375A63 /* SmartiOSRelayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A514760122BA45FE00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSRelayDemo" */;
+			buildPhases = (
+				9BA3B62772FDCCED41A35B0E /* [CP] Check Pods Manifest.lock */,
+				A51475E822BA45FD00375A63 /* Sources */,
+				A51475E922BA45FD00375A63 /* Frameworks */,
+				A51475EA22BA45FD00375A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartiOSRelayDemo;
+			productName = SmartiOSRelayDemo;
+			productReference = A51475EC22BA45FD00375A63 /* SmartiOSRelayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A514762822BB370700375A63 /* SmartiOSEchoCancellation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A514763C22BB370A00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSEchoCancellation" */;
+			buildPhases = (
+				62C2B03797C74B47FE1FE2DE /* [CP] Check Pods Manifest.lock */,
+				A514762522BB370700375A63 /* Sources */,
+				A514762622BB370700375A63 /* Frameworks */,
+				A514762722BB370700375A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartiOSEchoCancellation;
+			productName = SmartiOSEchoCancellation;
+			productReference = A514762922BB370700375A63 /* SmartiOSEchoCancellation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JW;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jasio Wu";
+				TargetAttributes = {
+					A514757C22BA194200375A63 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					A51475A622BA3F5A00375A63 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A51475EB22BA45FD00375A63 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A514762822BB370700375A63 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "SmarterStreaming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* SmarterStreaming_Example */,
+				A514757C22BA194200375A63 /* SmartiOSPlayer */,
+				A51475A622BA3F5A00375A63 /* SmartiOSPublisher */,
+				A51475EB22BA45FD00375A63 /* SmartiOSRelayDemo */,
+				A514762822BB370700375A63 /* SmartiOSEchoCancellation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514757B22BA194200375A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514758C22BA194400375A63 /* LaunchScreen.storyboard in Resources */,
+				A514758922BA194400375A63 /* Assets.xcassets in Resources */,
+				A514758722BA194200375A63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475A522BA3F5A00375A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51475CE22BA40D300375A63 /* backIcon@2x.png in Resources */,
+				A51475D122BA40D300375A63 /* btn_selected@2x.png in Resources */,
+				A51475B622BA3F5B00375A63 /* LaunchScreen.storyboard in Resources */,
+				A51475CC22BA40D300375A63 /* fullScreen@2x.png in Resources */,
+				A51475D022BA40D300375A63 /* stopSmall.png in Resources */,
+				A51475CF22BA40D300375A63 /* btn_selected@3x.png in Resources */,
+				A51475CA22BA40D300375A63 /* btn_unselected@2x.png in Resources */,
+				A51475B322BA3F5B00375A63 /* Assets.xcassets in Resources */,
+				A51475C822BA40D300375A63 /* btn_unselected@3x.png in Resources */,
+				A51475C922BA40D300375A63 /* playSmall.png in Resources */,
+				A51475CB22BA40D300375A63 /* shareIcon@2x.png in Resources */,
+				A51475CD22BA40D300375A63 /* back_color.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475EA22BA45FD00375A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51475FB22BA45FE00375A63 /* LaunchScreen.storyboard in Resources */,
+				A51475F822BA45FE00375A63 /* Assets.xcassets in Resources */,
+				A51475F622BA45FD00375A63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514762722BB370700375A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514763822BB370A00375A63 /* LaunchScreen.storyboard in Resources */,
+				A514763522BB370A00375A63 /* Assets.xcassets in Resources */,
+				A514763322BB370700375A63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62C2B03797C74B47FE1FE2DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartiOSEchoCancellation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7455F6E995E3869E425F0B63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartiOSPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823760D3D0F08C7F2DDB4189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartiOSPublisher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA3B62772FDCCED41A35B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartiOSRelayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECC3DF1FFB3C9059CB1AB54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmarterStreaming_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* JWAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* JWViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514757922BA194200375A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514758422BA194200375A63 /* ViewController.m in Sources */,
+				A514758F22BA194400375A63 /* main.m in Sources */,
+				A514762222BB1AD300375A63 /* RecorderView.m in Sources */,
+				A514761622BB176400375A63 /* ConvertTime.m in Sources */,
+				A514761F22BB1AD300375A63 /* PlayVideoView.m in Sources */,
+				A514758122BA194200375A63 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475A322BA3F5A00375A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514762322BB1AD300375A63 /* RecorderView.m in Sources */,
+				A514762022BB1AD300375A63 /* PlayVideoView.m in Sources */,
+				A514761722BB176400375A63 /* ConvertTime.m in Sources */,
+				A51475AE22BA3F5B00375A63 /* ViewController.m in Sources */,
+				A51475DF22BA411800375A63 /* SettingView.m in Sources */,
+				A51475B922BA3F5B00375A63 /* main.m in Sources */,
+				A51475AB22BA3F5B00375A63 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51475E822BA45FD00375A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514761822BB176400375A63 /* ConvertTime.m in Sources */,
+				A51475F322BA45FD00375A63 /* ViewController.m in Sources */,
+				A514762422BB1AD300375A63 /* RecorderView.m in Sources */,
+				A51475FE22BA45FE00375A63 /* main.m in Sources */,
+				A514762122BB1AD300375A63 /* PlayVideoView.m in Sources */,
+				A51475F022BA45FD00375A63 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514762522BB370700375A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B7064022C32CC600E5A48C /* ConvertTime.m in Sources */,
+				A514763022BB370700375A63 /* ViewController.m in Sources */,
+				A5B7064222C32CD900E5A48C /* RecorderView.m in Sources */,
+				A514763B22BB370A00375A63 /* main.m in Sources */,
+				A5B7064122C32CD500E5A48C /* PlayVideoView.m in Sources */,
+				A514762D22BB370700375A63 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A514758522BA194200375A63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A514758622BA194200375A63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A514758A22BA194400375A63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A514758B22BA194400375A63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A51475B422BA3F5B00375A63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51475B522BA3F5B00375A63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A51475F422BA45FD00375A63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51475F522BA45FD00375A63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A51475F922BA45FE00375A63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51475FA22BA45FE00375A63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A514763122BB370700375A63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A514763222BB370700375A63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A514763622BB370A00375A63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A514763722BB370A00375A63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E41AA90245ED6A4E12D64CC /* Pods-SmarterStreaming_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmarterStreaming/SmarterStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SmarterStreaming/SmarterStreaming-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A2171561506B5D22845EC3 /* Pods-SmarterStreaming_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmarterStreaming/SmarterStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SmarterStreaming/SmarterStreaming-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A514759022BA194400375A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9482F27D48483A11022806F8 /* Pods-SmartiOSPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartiOSPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSPlayerV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A514759122BA194400375A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AE9D4996B4259D430455AA /* Pods-SmartiOSPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartiOSPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSPlayerV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A51475BB22BA3F5B00375A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03793AE006F6AE60F682361F /* Pods-SmartiOSPublisher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartiOSPublisher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniulive.SmartiOSPublisher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51475BC22BA3F5B00375A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45949088CDD38215EA847C7 /* Pods-SmartiOSPublisher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartiOSPublisher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniulive.SmartiOSPublisher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A51475FF22BA45FE00375A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C110A2C60E95ED388B0CD5AB /* Pods-SmartiOSRelayDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SmartiOSRelayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSRelayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A514760022BA45FE00375A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D17DD9D5DD61E2F408D1DF3 /* Pods-SmartiOSRelayDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SmartiOSRelayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSRelayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A514763D22BB370A00375A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1887812020C91FF567456B8B /* Pods-SmartiOSEchoCancellation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SmartiOSEchoCancellation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSEchoCancellation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A514763E22BB370A00375A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFCA2CF3F99926D86F64F568 /* Pods-SmartiOSEchoCancellation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SmartiOSEchoCancellation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = daniulive.SmartiOSEchoCancellation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "SmarterStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SmarterStreaming_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A514759222BA194400375A63 /* Build configuration list for PBXNativeTarget "SmartiOSPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A514759022BA194400375A63 /* Debug */,
+				A514759122BA194400375A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51475BA22BA3F5B00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSPublisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51475BB22BA3F5B00375A63 /* Debug */,
+				A51475BC22BA3F5B00375A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A514760122BA45FE00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSRelayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51475FF22BA45FE00375A63 /* Debug */,
+				A514760022BA45FE00375A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A514763C22BB370A00375A63 /* Build configuration list for PBXNativeTarget "SmartiOSEchoCancellation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A514763D22BB370A00375A63 /* Debug */,
+				A514763E22BB370A00375A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
