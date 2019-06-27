@@ -22,13 +22,8 @@ env:
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
-  - brew install git-lfs
-  - git lfs install
   - gem install cocoapods
   - pod install --project-directory=Example
-before_script:
-  - pod cache clean --all
-  - git lfs pull
 script:
   - set -o pipefail
   - xcodebuild -version

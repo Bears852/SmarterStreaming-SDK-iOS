@@ -6,18 +6,6 @@
 
 大牛直播iOS端SDK
 
-## git-lfs 配置
-
-由于sdk大于100MB，使用git-lfs来去提交关联大文件
-
-```
-brew install git-lfs
-git lfs install
-# 安装 git-lfs 后最好清除一次缓存, 再 pod install
-# 删除项目下的 Pods 文件夹
-pod cache clean --all
-```
-
 ## CocoaPods
 
 ```ruby

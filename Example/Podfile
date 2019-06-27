@@ -8,51 +8,51 @@ inhibit_all_warnings!
 # cocoapods 1.7 新特性，将pods生成多个 Xcodeproj 去依赖项目，优化 Xcode 索引
 install! 'cocoapods', generate_multiple_pod_projects: true
 
-target 'SmarterStreaming_Example' do
-  pod 'SmarterStreaming/Player', :path => '../'
-  pod 'SmarterStreaming/Publisher', :path => '../'
-end
-
-target 'SmartiOSPlayer' do
-  pod 'SmarterStreaming/Player', :path => '../'
-end
-
-target 'SmartiOSPublisher' do
-  pod 'SmarterStreaming/Publisher', :path => '../'
-end
-
-target 'SmartiOSRelayDemo' do
-  pod 'SmarterStreaming/Player', :path => '../'
-  pod 'SmarterStreaming/Publisher', :path => '../'
-end
-
-target 'SmartiOSEchoCancellation' do
-  pod 'SmarterStreaming/Player', :path => '../'
-  pod 'SmarterStreaming/Publisher', :path => '../'
-end
-
 # target 'SmarterStreaming_Example' do
-#   pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
-#   pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+#   pod 'SmarterStreaming/Player', :path => '../'
+#   pod 'SmarterStreaming/Publisher', :path => '../'
 # end
 
 # target 'SmartiOSPlayer' do
-#   pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+#   pod 'SmarterStreaming/Player', :path => '../'
 # end
 
 # target 'SmartiOSPublisher' do
-#   pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+#   pod 'SmarterStreaming/Publisher', :path => '../'
 # end
 
 # target 'SmartiOSRelayDemo' do
-#   pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
-#   pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+#   pod 'SmarterStreaming/Player', :path => '../'
+#   pod 'SmarterStreaming/Publisher', :path => '../'
 # end
 
 # target 'SmartiOSEchoCancellation' do
-#   pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
-#   pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+#   pod 'SmarterStreaming/Player', :path => '../'
+#   pod 'SmarterStreaming/Publisher', :path => '../'
 # end
+
+target 'SmarterStreaming_Example' do
+  pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+  pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+end
+
+target 'SmartiOSPlayer' do
+  pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+end
+
+target 'SmartiOSPublisher' do
+  pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+end
+
+target 'SmartiOSRelayDemo' do
+  pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+  pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+end
+
+target 'SmartiOSEchoCancellation' do
+  pod 'SmarterStreaming/Player', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+  pod 'SmarterStreaming/Publisher', :git => "https://github.com/wbcyclist/SmarterStreaming-SDK-iOS.git", :branch => 'master'
+end
 
 # post_install do |installer|
 #   installer.pods_project.targets.each do |target|
