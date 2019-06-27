@@ -30,13 +30,13 @@ Pod::Spec.new do |spec|
   spec.default_subspec = 'common'
 
   spec.subspec 'common' do |common|
-    common.script_phase = { :name => 'UNZIP SmarterStreaming SDK', :script => 'cd ${PODS_ROOT}/SmarterStreaming/SmarterStreaming/Frameworks; for n in "libSmartPlayerSDK.a" "libSmartPublisherSDK.a" "libSmartPublisherSDK_NO_GPUImage.a"; do if ! [ -x $n ]; then unzip -o $n; fi; done;', :execution_position => :before_compile }
     common.source_files = "SmarterStreaming/Headers/nt_common_media_define.h", "SmarterStreaming/Headers/nt_event_define.h"
     common.frameworks = "Accelerate", "AssetsLibrary", "AudioToolbox", "AVFoundation", "CoreMedia", "Foundation", "UIKit", "VideoToolbox"
     common.libraries = "bz2", "c++", "iconv", "z"
   end
 
   spec.subspec 'Player' do |player|
+    player.script_phase = { :name => 'UNZIP SmarterStreaming SDK', :script => 'cd ${PODS_ROOT}/SmarterStreaming/SmarterStreaming/Frameworks; for n in "libSmartPlayerSDK.a" "libSmartPublisherSDK.a" "libSmartPublisherSDK_NO_GPUImage.a"; do if [ -f $n ] && [ ! -x $n ]; then unzip -o $n; fi; done;', :execution_position => :before_compile }
     player.frameworks = "GLKit", "OpenGLES", "QuartzCore"
     player.source_files = "SmarterStreaming/Headers/SmartPlayerSDK.h"
     player.vendored_libraries = "SmarterStreaming/Frameworks/libSmartPlayerSDK.a"
@@ -44,12 +44,14 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Publisher' do |publisher|
+    publisher.script_phase = { :name => 'UNZIP SmarterStreaming SDK', :script => 'cd ${PODS_ROOT}/SmarterStreaming/SmarterStreaming/Frameworks; for n in "libSmartPlayerSDK.a" "libSmartPublisherSDK.a" "libSmartPublisherSDK_NO_GPUImage.a"; do if [ -f $n ] && [ ! -x $n ]; then unzip -o $n; fi; done;', :execution_position => :before_compile }
     publisher.source_files = "SmarterStreaming/Headers/SmartPublisherSDK.h", "SmarterStreaming/Headers/SmartRTSPSeverSDK.h"
     publisher.vendored_libraries = "SmarterStreaming/Frameworks/libSmartPublisherSDK.a"
     publisher.dependency 'SmarterStreaming/common'
   end
   
   spec.subspec 'Publisher_NO_GPUImage' do |publisher2|
+    publisher2.script_phase = { :name => 'UNZIP SmarterStreaming SDK', :script => 'cd ${PODS_ROOT}/SmarterStreaming/SmarterStreaming/Frameworks; for n in "libSmartPlayerSDK.a" "libSmartPublisherSDK.a" "libSmartPublisherSDK_NO_GPUImage.a"; do if [ -f $n ] && [ ! -x $n ]; then unzip -o $n; fi; done;', :execution_position => :before_compile }
     publisher2.source_files = "SmarterStreaming/Headers/SmartPublisherSDK.h", "SmarterStreaming/Headers/SmartRTSPSeverSDK.h"
     publisher2.vendored_libraries = "SmarterStreaming/Frameworks/libSmartPublisherSDK_NO_GPUImage.a"
     publisher2.dependency 'SmarterStreaming/common'

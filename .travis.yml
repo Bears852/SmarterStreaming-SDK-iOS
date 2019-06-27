@@ -29,4 +29,4 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
   - xcodebuild clean build -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" -sdk iphonesimulator -configuration Release ONLY_ACTIVE_ARCH=NO | xcpretty
-  - pod lib lint
+  # - pod lib lint
